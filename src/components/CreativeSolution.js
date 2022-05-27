@@ -16,7 +16,7 @@ const CreativeSolution = () => {
           </div>
           <div className="col-md-6">
             <div className={Styles.right}>
-
+              <div className={Styles.rightContent}></div>
             </div>
           </div>
         </div>
