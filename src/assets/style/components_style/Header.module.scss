@@ -51,8 +51,14 @@
     }
 
     button {
-      @include buttons($black, $white);
-      margin:1.5rem 0 1rem;
+      @include buttons($white, $gold);
+      margin: 1.5rem 0 1rem;
+      transition: all 0.4s ease;
+
+      &:hover {
+        @include buttons($white, $black);
+        outline: 1px solid $ultra_lightgray;
+      }
     }
   }
 }
