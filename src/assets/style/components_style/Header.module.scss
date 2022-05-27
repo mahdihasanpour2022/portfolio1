@@ -1,5 +1,21 @@
+@import "../common_styles/variables";
+
 .headerContainer {
-  background-color: red;
+  background: url("https://archo-react.vercel.app/assets/img/works/curs/3.jpg") no-repeat center;
+  // background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://archo-react.vercel.app/assets/img/works/curs/3.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
   width: 100%;
   height: 100vh;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 }
