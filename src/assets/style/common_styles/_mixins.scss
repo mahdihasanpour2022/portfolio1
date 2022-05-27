@@ -1,0 +1,14 @@
+@mixin buttons($color, $background) {
+  background-color: $background;
+  color: $color;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  @content;
+}
+
+@mixin ziro_space {
+  margin: 0;
+  padding: 0;
+}

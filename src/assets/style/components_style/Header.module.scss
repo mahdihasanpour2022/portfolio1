@@ -1,4 +1,8 @@
 @import "../common_styles/variables";
+@import "../common_styles/font";
+@import "../common_styles/mixins";
+
+
 
 .headerContainer {
   background: url("https://archo-react.vercel.app/assets/img/works/curs/3.jpg") no-repeat center;
@@ -17,5 +21,47 @@
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .headerContent {
+    margin: 0;
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+    z-index: 5;
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    padding: 1rem;
+    border: 1px solid rgba(250, 250, 250, 0.1);
+    border-radius: 5px;
+
+    h1 {
+      color: $white ;
+      font-family: $Misegar-Regular ;
+      letter-spacing: 0.2rem;
+    }
+
+    p {
+      color: $white ;
+      letter-spacing: 0.2rem;
+      opacity: 60%;
+      @include ziro_space;
+    }
+
+    button {
+      @include buttons($black, $white);
+    }
+  }
+}
+
+@media (max-width:576px) {
+  .headerContent {
+    position: absolute;
+    width: 80% !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
   }
 }
