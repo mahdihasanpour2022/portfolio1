@@ -1,6 +1,9 @@
 import React from 'react';
 // image-magnify 
-import ReactImageMagnify from 'react-image-magnify';
+// import ReactImageMagnify from 'react-image-magnify';
+// react-medium-image-zoom 
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 // scss 
 import Styles from "../assets/style/components_style/OurRender.module.scss";
 
@@ -9,27 +12,11 @@ const OurRender = () => {
   return (
     <>
       <div className={`${Styles.rendersContainer} container`}>
-        <div className="row">
+        <div className="row m-0">
           <p>Renders</p>
-
-          <div style={{ width: "300px", height: "300px" }}>
-
-            <ReactImageMagnify {...{
-              smallImage: {
-                alt: 'Wristwatch by Ted Baker London',
-                isFluidWidth: true,
-                src: ax1,
-                // width: 1500,
-                // height: 1500
-              },
-              largeImage: {
-                src: ax1,
-                width: 2000,
-                height: 2000
-              }
-            }} />
+          <div className={Styles.renderGridBox}>
+            
           </div>
-
         </div>
       </div>
     </>

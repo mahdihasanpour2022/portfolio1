@@ -4,7 +4,7 @@
 
 .rendersContainer{
   background-color: $white;
-  height: 70vh;
+  height: fit-content;
   p{
     font-size: 2.2rem;
     font-weight: 100;
@@ -14,5 +14,12 @@
       font-weight: 400;
       color: $light_gold;
     }
+  }
+  .renderGridBox{
+    padding: 0;
+    margin: 2rem 0;
+    display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
+    
   }
 }
