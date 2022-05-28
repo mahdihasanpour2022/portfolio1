@@ -2,24 +2,25 @@
 @import "../common_styles/font";
 @import "../common_styles/mixins";
 
-.rendersContainer{
-  background-color: $white;
-  height: fit-content;
-  p{
-    font-size: 2.2rem;
-    font-weight: 100;
-    text-align: center;
-    margin: 1rem 0;
-    &::first-letter{
-      font-weight: 400;
-      color: $light_gold;
-    }
+
+.pStyle {
+  font-size: 2.2rem;
+  font-weight: 100;
+  text-align: center;
+  margin: 1rem 0;
+
+  &::first-letter {
+    font-weight: 400;
+    color: $light_gold;
   }
-  .renderGridBox{
-    padding: 0;
-    margin: 2rem 0;
-    display: grid;
-    // grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
-    
+}
+
+.renderGridBox {
+  padding: 0;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  img {
+    width: 250px;
+    height: 170px;
   }
 }
