@@ -6,7 +6,6 @@
 .TeamContainer {
   background-color: $black;
   text-align: center;
-  padding: 2rem 0;
 
   p {
     color: $white;
@@ -68,6 +67,9 @@
         }
         h4{
           color: $gold;
+        }
+        p{
+          color: $white;
         }
       }
     }

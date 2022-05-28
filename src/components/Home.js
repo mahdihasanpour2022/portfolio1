@@ -6,6 +6,7 @@ import Services from "../components/Services";
 import Comments from "../components/Comments.js";
 import OurRender from "../components/OurRender.js";
 import Team from "../components/Team.js";
+import Footer from "../components/Footer.js";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Comments />
       <OurRender />
       <Team />
+      <Footer />
     </>
   );
 };

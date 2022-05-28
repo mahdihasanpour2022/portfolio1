@@ -1,0 +1,9 @@
+@import "../common_styles/variables";
+@import "../common_styles/font";
+@import "../common_styles/mixins";
+
+.ContactUs{
+  .list{
+    list-style: none;
+  }
+}
