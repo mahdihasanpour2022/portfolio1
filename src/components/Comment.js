@@ -8,19 +8,20 @@ const Comment = ({ data }) => {
 
   const { id, author, title, comment, image } = data;
 
-  console.log()
-
+const shorterText=()=>{
+  return comment.split(" ").slice(0,10).join(" ")
+}
   return (
     <>
       <div className={Styles.comment}>
-        <div className={Styles.textUp}>
-          <h5>{comment}</h5>
+        <div className={Styles.commentText}>
+          <h5>{shorterText(comment)}</h5>
         </div>
-        <div className={Styles.contentDown}>
-          <img src={image} alt={id} />
-          <div>
-            <p>{author}</p>
-            <h5>{title}</h5>
+        <div className={Styles.imageAndDescription}>
+          <img src={image} alt={id} className={Styles.image}/>
+          <div className={Styles.description}>
+            <h6>{author}</h6>
+            <p>{title}</p>
           </div>
         </div>
       </div>

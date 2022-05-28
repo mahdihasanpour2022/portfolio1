@@ -13,18 +13,18 @@ const Comments = () => {
 
   const responsive = {
     0: { items: 1 },
-    568: { items: 2 },
-    768: { items: 3 },
-    992: { items: 5 },
-    1200: { items: 8 },
+    568: { items: 1 },
+    768: { items: 2 },
+    992: { items: 3 },
+    1200: { items: 3 },
   };
 
 
   return (
     <>
-      <div className={`${Styles.BestSkillsContainer} container-fluid p-0`}>
+      <div className={`${Styles.commentsContainer} container-fluid p-0`}>
         <div className="row m-0">
-          <div className={Styles.BestSkills}>
+          <div className={Styles.comments}>
 
             <AliceCarousel
               autoPlay

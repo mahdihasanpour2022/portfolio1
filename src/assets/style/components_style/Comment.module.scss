@@ -2,3 +2,51 @@
 @import "../common_styles/font";
 @import "../common_styles/mixins";
 
+
+
+.comment {
+
+  min-height: 200px;
+  margin: 0.5rem;
+  @include flex(space-between, stretch) {
+    flex-direction: column;
+  }
+  .commentText {
+    color: $white;
+    text-align: center;
+    padding: 0.5rem;
+    border: 1px solid rgb(67, 67, 67);
+    border-radius: 5px;
+    h5{
+      font-size: 1rem;
+      text-transform: capitalize
+    }
+  }
+
+  .imageAndDescription {
+    @include flex(center, center);
+    margin: 1rem 0;
+
+    .image {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+    }
+
+    .description {
+
+      h6 {
+        color: $white;
+        margin: 0;
+      }
+
+      p {
+        color: $gold;
+        margin: 0;
+        font-weight: 600;
+      }
+    }
+  }
+}

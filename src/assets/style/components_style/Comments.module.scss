@@ -3,15 +3,13 @@
 @import "../common_styles/mixins";
 
 
-.BestSkillsContainer {
+.commentsContainer {
   background-color: $black  !important;
-
-  .BestSkills {
-    width: 100%;
-    background: linear-gradient(to top , rgba(0,0,0,0.9),rgba(0,0,0,0.9)) ,url("../../images/dots.jpg") repeat center;
-    height: 40vh;
-    // border-top: 5px solid $gold;
-    // border-bottom: 5px solid $gold;
-
+  height: 100%;
+  
+  .comments {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../../images/dots.jpg") repeat center;
+    height: 100%;
+    padding: 2rem 0;
   }
 }
