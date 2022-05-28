@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+// import {useDispach , useSelector} from "react-redux";
+// action creator 
+// import {addComment_AC} from "";
+import fetchData from '../redux/comment/commentActionCreator';
+// comment _list 
+// import {comments_list} from "../data_service/coments_list";
 // scss 
 import Styles from "../assets/style/components_style/Header.module.scss";
 
 const Header = () => {
+
+  // const dispatch =useDispach();
+  // const data = useSelector(state => state.commentState)
+
+useEffect(()=>{
+  fetchData()
+  // dispatch(addComment_AC(comments_list))
+},[])
+
   return (
     <>
       <div className="container-fluid">
