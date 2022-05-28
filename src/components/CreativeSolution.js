@@ -6,7 +6,7 @@ const CreativeSolution = () => {
   return (
     <>
       <div className={`${Styles.creativeContainer} container-fluid p-0`}>
-        <div className="row m-0 g-4">
+        <div className="row m-0 g-4 my-4">
           <div className="col-md-6">
             <div className={Styles.left}>
               <h2>Creative Solutions by Professional Designers</h2>
@@ -16,7 +16,10 @@ const CreativeSolution = () => {
           </div>
           <div className="col-md-6">
             <div className={Styles.right}>
-              <div className={Styles.rightContent}></div>
+              <div className={Styles.rightContent}>
+                <h3>25 years of experience</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error laudantium, totam rem aperiam</p>
+              </div>
             </div>
           </div>
         </div>
