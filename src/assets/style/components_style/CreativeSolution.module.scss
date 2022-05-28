@@ -5,7 +5,7 @@
 
 .creativeContainer {
   background-color: $black;
-  // height: 70vh;
+  height: 50vh;
   color: $white ;
 
   @include flex (center, center) {
