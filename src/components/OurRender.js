@@ -15,7 +15,16 @@ const OurRender = () => {
         <div className="row m-0">
           <p>Renders</p>
           <div className={Styles.renderGridBox}>
-            
+            <Zoom>
+              <picture>
+                <source media="(max-width: 800px)" srcSet="/path/to/teAraiPoint.jpg" />
+                <img
+                  alt="that wanaka tree"
+                  src="/path/to/thatwanakatree.jpg"
+                  width="500"
+                />
+              </picture>
+            </Zoom>
           </div>
         </div>
       </div>
