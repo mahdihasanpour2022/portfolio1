@@ -3,6 +3,7 @@ import React from 'react';
 import Header from "../components/Header";
 import CreativeSolution from "../components/CreativeSolution";
 import Services from "../components/Services";
+import Comments from "../components/Comments.js";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Header />
       <CreativeSolution />
       <Services />
+      <Comments />
     </>
   );
 };

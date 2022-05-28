@@ -1,0 +1,17 @@
+@import "../common_styles/variables";
+@import "../common_styles/font";
+@import "../common_styles/mixins";
+
+
+.BestSkillsContainer {
+  background-color: $black  !important;
+
+  .BestSkills {
+    width: 100%;
+    background: linear-gradient(to top , rgba(0,0,0,0.9),rgba(0,0,0,0.9)) ,url("../../images/dots.jpg") repeat center;
+    height: 40vh;
+    // border-top: 5px solid $gold;
+    // border-bottom: 5px solid $gold;
+
+  }
+}
