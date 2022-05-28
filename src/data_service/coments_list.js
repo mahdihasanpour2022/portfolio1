@@ -26,7 +26,7 @@ export const comments_list = [
     image:  autorImage3 ,
   }, {
     id: 4,
-    author: "petter jeferson",
+    author: "brad halfy",
     title: "Designer",
     comment: "i just love thier design for all stunning details,you must know what can wew do for a project,before taking it,but with archo , the sky is a limit",
     image: autorImage4 

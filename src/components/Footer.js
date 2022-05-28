@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSelector} from "react-redux";
 // scss 
 import Styles from "../assets/style/components_style/Footer.module.scss";
 // reacy icons 
@@ -8,9 +9,10 @@ import { FiPhone } from "react-icons/fi";
 
 const Footer = () => {
 
+  // const dispatch = useDispatch();
+  const data = useSelector(state => state.commentState);
 
-
-  
+// console.log(data)
   return (
     <>
       <div className={`${Styles.container} container-fluid`}>
@@ -38,7 +40,7 @@ const Footer = () => {
                   <FiPhone />
                   <div>
                     <h6>Call Us</h6>
-                  <p>+87986451666</p>
+                    <p>+87986451666</p>
                   </div>
                 </li>
               </ul>

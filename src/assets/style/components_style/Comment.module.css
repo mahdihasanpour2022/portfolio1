@@ -1,0 +1,79 @@
+@font-face {
+  src: url("../../fonts/Asterika.otf");
+  font-family: "Asterika";
+}
+
+@font-face {
+  src: url("../../fonts/Misegar-Regular.otf");
+  font-family: "Misegar-Regular";
+}
+
+@font-face {
+  src: url("../../fonts/MouseMemoirs-Regular.ttf");
+  font-family: "MouseMemoirs";
+}
+
+.comment {
+  min-height: 200px;
+  margin: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.comment .commentText {
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  border: 1px solid #434343;
+  border-radius: 5px;
+}
+
+.comment .commentText h5 {
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.comment .imageAndDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+}
+
+.comment .imageAndDescription .image {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.comment .imageAndDescription .description h6 {
+  color: #fff;
+  margin: 0;
+}
+
+.comment .imageAndDescription .description p {
+  color: #594D2E;
+  margin: 0;
+  font-weight: 600;
+}
+/*# sourceMappingURL=Comment.module.css.map */

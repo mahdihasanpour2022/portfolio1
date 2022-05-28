@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AEAA,UAAU;EACR,GAAG,EAAE,+BAA+B;EACpC,WAAW,EAAE,UAAU;;;AAEzB,UAAU;EACR,GAAG,EAAE,sCAAsC;EAC3C,WAAW,EAAE,iBAAiB;;;AAEhC,UAAU;EACR,GAAG,EAAE,2CAA2C;EAChD,WAAW,EAAE,cAAc;;;AFL7B,AAAA,kBAAkB,CAAC;EACjB,gBAAgB,ECNT,OAAO,CDMY,UAAU;EACpC,MAAM,EAAE,IAAI;CAOb;;AATD,AAIE,kBAJgB,CAIhB,SAAS,CAAC;EACR,UAAU,EAAE,+DAA+D,EAAE,4BAA4B,CAAC,MAAM,CAAC,MAAM;EACvH,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,MAAM;CAChB",
+    "sources": [
+        "Comments.module.scss",
+        "../common_styles/_variables.scss",
+        "../common_styles/_font.scss",
+        "../common_styles/_mixins.scss"
+    ],
+    "names": [],
+    "file": "Comments.module.css"
+}

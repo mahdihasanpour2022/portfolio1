@@ -1,0 +1,78 @@
+@font-face {
+  src: url("../../fonts/Asterika.otf");
+  font-family: "Asterika";
+}
+
+@font-face {
+  src: url("../../fonts/Misegar-Regular.otf");
+  font-family: "Misegar-Regular";
+}
+
+@font-face {
+  src: url("../../fonts/MouseMemoirs-Regular.ttf");
+  font-family: "MouseMemoirs";
+}
+
+.col {
+  background-color: #fff;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  padding: 2.5rem 0;
+}
+
+.col .serviceCard {
+  padding: 3rem 1rem;
+}
+
+.col .serviceCard h3 {
+  color: #ab9354;
+  font-family: "MouseMemoirs";
+  font-size: 40px;
+}
+
+.col .serviceCard p {
+  margin: 0;
+  font-family: "Asterika";
+  font-weight: 600;
+  opacity: 50%;
+}
+
+.col .serviceCard button {
+  background-color: transparent;
+  color: #181818;
+  padding: 0;
+  font-size: 12px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.col .serviceCard button:hover {
+  border-bottom: 1px solid #ab9354;
+}
+
+.col:hover {
+  background-color: transparent !important;
+}
+
+.col:hover h4,
+.col:hover p {
+  color: #fff !important;
+}
+
+.col:hover button {
+  background-color: transparent;
+  color: #fff;
+}
+
+.col:nth-child(2) {
+  background: transparent;
+}
+
+.col:nth-child(2) p,
+.col:nth-child(2) h4,
+.col:nth-child(2) button {
+  color: #fff !important;
+}
+/*# sourceMappingURL=ServiceCard.module.css.map */

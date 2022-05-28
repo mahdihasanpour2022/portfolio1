@@ -1,0 +1,27 @@
+@font-face {
+  src: url("../../fonts/Asterika.otf");
+  font-family: "Asterika";
+}
+
+@font-face {
+  src: url("../../fonts/Misegar-Regular.otf");
+  font-family: "Misegar-Regular";
+}
+
+@font-face {
+  src: url("../../fonts/MouseMemoirs-Regular.ttf");
+  font-family: "MouseMemoirs";
+}
+
+.commentsContainer {
+  background-color: #181818 !important;
+  height: 100%;
+}
+
+.commentsContainer .comments {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.9))), url("../../images/dots.jpg") repeat center;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../../images/dots.jpg") repeat center;
+  height: 100%;
+  padding: 2rem 0;
+}
+/*# sourceMappingURL=Comments.module.css.map */

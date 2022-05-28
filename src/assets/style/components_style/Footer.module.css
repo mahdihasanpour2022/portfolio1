@@ -1,0 +1,73 @@
+@font-face {
+  src: url("../../fonts/Asterika.otf");
+  font-family: "Asterika";
+}
+
+@font-face {
+  src: url("../../fonts/Misegar-Regular.otf");
+  font-family: "Misegar-Regular";
+}
+
+@font-face {
+  src: url("../../fonts/MouseMemoirs-Regular.ttf");
+  font-family: "MouseMemoirs";
+}
+
+.container {
+  background-color: black;
+}
+
+.container .ContactUs {
+  color: #fff;
+}
+
+.container .ContactUs .list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container .ContactUs .list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+}
+
+.container .ContactUs .list li svg {
+  opacity: 70%;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.container .ContactUs .list li div {
+  margin: 0;
+  padding: 0;
+}
+
+.container .ContactUs .list li div h6 {
+  margin: 0;
+  padding: 0;
+  color: #594D2E;
+  font-weight: 600;
+}
+
+.container .ContactUs .list li div p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+  font-weight: 100;
+  opacity: 70%;
+}
+/*# sourceMappingURL=Footer.module.css.map */

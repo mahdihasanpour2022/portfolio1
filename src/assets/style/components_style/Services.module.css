@@ -1,0 +1,30 @@
+@font-face {
+  src: url("../../fonts/Asterika.otf");
+  font-family: "Asterika";
+}
+
+@font-face {
+  src: url("../../fonts/Misegar-Regular.otf");
+  font-family: "Misegar-Regular";
+}
+
+@font-face {
+  src: url("../../fonts/MouseMemoirs-Regular.ttf");
+  font-family: "MouseMemoirs";
+}
+
+.serviceContainer {
+  background-color: #181818;
+  padding: 2rem 2rem 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.serviceContainer .services {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../../images/sofa.jpg") no-repeat;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../images/sofa.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/*# sourceMappingURL=Services.module.css.map */

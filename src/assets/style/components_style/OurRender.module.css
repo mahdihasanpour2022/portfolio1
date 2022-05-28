@@ -1,0 +1,49 @@
+@font-face {
+  src: url("../../fonts/Asterika.otf");
+  font-family: "Asterika";
+}
+
+@font-face {
+  src: url("../../fonts/Misegar-Regular.otf");
+  font-family: "Misegar-Regular";
+}
+
+@font-face {
+  src: url("../../fonts/MouseMemoirs-Regular.ttf");
+  font-family: "MouseMemoirs";
+}
+
+.pStyle {
+  font-size: 2.2rem;
+  font-weight: 100;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.pStyle::first-letter {
+  font-weight: 400;
+  color: #ab9354;
+}
+
+.renderGridBox {
+  padding: 0;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  text-align: center;
+}
+
+.renderGridBox img {
+  width: 300px;
+  height: 200px;
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+}
+
+.renderGridBox img:hover {
+  -webkit-transform: rotateY(180deg) scale(1.3);
+          transform: rotateY(180deg) scale(1.3);
+  border: 1px solid darkgray;
+}
+/*# sourceMappingURL=OurRender.module.css.map */
