@@ -6,12 +6,70 @@
 .TeamContainer {
   background-color: $black;
   text-align: center;
+  padding: 2rem 0;
 
-  .teamTitle {
-    p {
-      color: $white;
-      font-size: 2.5rem;
-      margin: 1rem auto;
+  p {
+    color: $white;
+    font-size: 2.5rem;
+    margin: 1rem auto;
+  }
+
+  .teams {
+
+    // border: 1px solid red;
+    @include flex(center, flex-start) {
+      flex-flow: row wrap;
+    }
+
+    ;
+    margin: 1rem;
+
+    .person {
+      margin: 4rem;
+      position: relative;
+      z-index: 5;
+
+      img {
+        width: 200px;
+        object-fit: cover;
+        @include ziro_space;
+      }
+
+      h4 {
+        color: $white;
+        font-size: 1rem;
+        margin-top: 1.5rem;
+      }
+
+      p {
+        color: $gold;
+        font-size: 0.85rem;
+        @include ziro_space;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        // background-color: red;
+        width: 99%;
+        height: 78%;
+        top: 0.15rem;
+        left: 0;
+        transform: rotate(15deg) scale(1);
+        z-index: -1;
+        border: 3px solid $light_gold;
+        transition: all 0.4s ease;
+      }
+      &:hover{
+        &::before{
+          
+          border: 3px solid $gold;
+          transform: rotate(0) scale(1.1);;
+        }
+        h4{
+          color: $gold;
+        }
+      }
     }
   }
 }
