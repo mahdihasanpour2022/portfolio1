@@ -2,8 +2,57 @@
 @import "../common_styles/font";
 @import "../common_styles/mixins";
 
-.ContactUs{
-  .list{
-    list-style: none;
+
+.container {
+  background-color: black;
+
+  .ContactUs {
+    color: $white;
+
+    .list {
+      list-style: none;
+      @include ziro_space;
+
+      li {
+        @include flex(flex-start, center);
+        margin: 1rem 0;
+
+        svg {
+          opacity: 70%;
+          margin-right: 1rem;
+          font-size: 1.5rem;
+          // color: $black;
+          // background-color: $white;
+          // padding: 0.7rem;
+          display: inline-flex;
+          // border-radius: 50%;
+          // border: none;
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+
+        div {
+          @include ziro_space;
+
+          h6 {
+            @include ziro_space;
+            color: $gold;
+            font-weight: 600;
+          }
+
+          p {
+            @include ziro_space;
+            font-size: 0.8rem;
+            font-weight: 100;
+            opacity: 70%;
+          }
+        }
+
+      }
+    }
   }
+  .RecentNews{
+    
+  }
+
 }

@@ -5,7 +5,7 @@
 
 
 .headerContainer {
-  background: url("https://archo-react.vercel.app/assets/img/works/curs/3.jpg") no-repeat center;
+  background: url("../../images/header.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
@@ -21,7 +21,6 @@
     left: 0;
     background-color: rgba(0, 0, 0, 0.6);
   }
-
   .headerContent {
     margin: 0;
     position: absolute;
