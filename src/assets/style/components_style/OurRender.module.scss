@@ -1,0 +1,18 @@
+@import "../common_styles/variables";
+@import "../common_styles/font";
+@import "../common_styles/mixins";
+
+.rendersContainer{
+  background-color: $white;
+  height: 70vh;
+  p{
+    font-size: 2.2rem;
+    font-weight: 100;
+    text-align: center;
+    margin: 1rem 0;
+    &::first-letter{
+      font-weight: 400;
+      color: $light_gold;
+    }
+  }
+}
