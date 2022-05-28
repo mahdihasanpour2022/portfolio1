@@ -5,6 +5,7 @@ import CreativeSolution from "../components/CreativeSolution";
 import Services from "../components/Services";
 import Comments from "../components/Comments.js";
 import OurRender from "../components/OurRender.js";
+import Team from "../components/Team.js";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Services />
       <Comments />
       <OurRender />
+      <Team />
     </>
   );
 };
