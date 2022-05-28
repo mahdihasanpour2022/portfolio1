@@ -1,5 +1,7 @@
 import React from 'react';
-// scss 
+// helper function 
+import {shorterText} from "../helper_function/helper_function";
+ // scss 
 import Styles from "../assets/style/components_style/Comment.module.scss";
 
 
@@ -8,9 +10,7 @@ const Comment = ({ data }) => {
 
   const { id, author, title, comment, image } = data;
 
-const shorterText=()=>{
-  return comment.split(" ").slice(0,10).join(" ")
-}
+
   return (
     <>
       <div className={Styles.comment}>

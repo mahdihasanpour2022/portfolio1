@@ -1,20 +1,29 @@
 import React from 'react';
-import { useSelector} from "react-redux";
+import { useSelector } from "react-redux";
 // scss 
 import Styles from "../assets/style/components_style/Footer.module.scss";
-// reacy icons 
+// helper-function 
+import { shorterText } from "../helper_function/helper_function";
+// react-icons 
 import { GoLocation } from "react-icons/go";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
 
+import { BsFacebook } from "react-icons/bs";
+import { AiFillTwitterCircle } from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
+import { BsYoutube } from "react-icons/bs";
+
+
 const Footer = () => {
 
-  const {comments} = useSelector(state => state.commentState);
+  const { comments } = useSelector(state => state.commentState);
+
 
   return (
     <>
       <div className={`${Styles.container} container-fluid`}>
-        <div className="row p-4">
+        <div className="row py-4">
 
           <div className="col-md-4">
             <div className={Styles.ContactUs}>
@@ -48,12 +57,33 @@ const Footer = () => {
           <div className="col-md-4">
             <div className={Styles.RecentNews}>
               <h4>Recent News</h4>
+
+              {comments.slice(0, 2).map(item =>
+                <div key={item.title} className={Styles.news}>
+                  <img src={item.image} alt={item.title} />
+
+                  <div className={Styles.content}>
+                    <p>{shorterText(item.comment)}</p>
+                    <p>{item.author}</p>
+                  </div>
+
+                </div>
+              )}
             </div>
           </div>
 
           <div className="col-md-4">
             <div className={Styles.SocialMedia}>
               <h4>Archo</h4>
+              <div className={Styles.mediaIcon}>
+
+                <BsFacebook />
+                <AiFillTwitterCircle />
+                <AiFillInstagram />
+                <BsYoutube />
+
+              </div>
+              <p>© 2022, ARCH TEMPLATE. MADE WITH PASSION BYTHEMESCAMP.</p>
             </div>
           </div>
         </div>
