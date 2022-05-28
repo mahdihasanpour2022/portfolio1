@@ -2,11 +2,49 @@
 @import "../common_styles/font";
 @import "../common_styles/mixins";
 
+.col {
+  background-color: $white;
+  transition: background-color 0.3s ease;
+  // border: 1px solid lightgray;
 
-.serviceCard{
-  border: 1px solid lightgray;
-  h3{
-    color: $light_gold;
-    font-family: $MouseMemoirs;
+  .serviceCard {
+    padding: 3rem 1rem;
+
+    h3 {
+      color: $light_gold;
+      font-family: $MouseMemoirs;
+      font-size: 50px;
+    }
+
+    p {
+      margin: 0;
+      font-family: $Asterika;
+      font-weight: 600;
+      opacity: 50%;
+    }
+
+    button {
+      @include buttons($black, transparent) {
+        padding: 0;
+        font-size: 12px;
+        border: none;
+        border-bottom: 2px solid transparent;
+        transition: all 0.3s ease;
+      }
+
+      &:hover {
+        border-bottom: 1px solid $light_gold;
+      }
+    }
+
+  }
+  &:hover {
+    background-color: transparent !important;
+    h4,p{
+      color: $white !important;
+    }
+    button{
+      @include buttons($white,transparent);
+    }
   }
 }

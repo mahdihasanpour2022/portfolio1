@@ -9,9 +9,9 @@ import { services_list } from "../data_service/services_list";
 const Services = () => {
   return (
     <>
-      <div className="conatiner">
-        <div className={`${Styles.serviceContainer} row`}>
-          {services_list.map(item => <ServiceCard key={item.id} />)}
+      <div className={`${Styles.serviceContainer} container-fluid`}>
+        <div className={`${Styles.services} row`}>
+          {services_list.map(item => <ServiceCard key={item.id} data={item}/>)}
         </div>
       </div>
     </>

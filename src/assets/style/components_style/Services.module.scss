@@ -2,6 +2,14 @@
 @import "../common_styles/font";
 @import "../common_styles/mixins";
 
-.serviceContainer{
-  @include flex(center,center);
+.serviceContainer {
+  background-color: $black;
+  padding: 0 2rem;
+  height: fit-content;
+
+  .services {
+    background:linear-gradient(to top ,rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../../images/sofa.jpg")no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }

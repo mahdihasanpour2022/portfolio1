@@ -2,17 +2,20 @@ import React from 'react';
 // scss 
 import Styles from "../assets/style/components_style/ServiceCard.module.scss";
 
-const ServiceCard = () => {
+const ServiceCard = ({ data }) => {
+
+
+  const { id, title, text } = data;
   return (
     <>
-      <div className="col-sm-6 col-md-3">
-            <div className={Styles.serviceCard}>
-              <h3>01</h3>
-              <h4>interior Design</h4>
-              <p>Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat.</p>
-              <button>READ MORE</button>
-            </div>
-          </div>
+      <div className={`${Styles.col} col-sm-6 col-md-3`}>
+        <div className={Styles.serviceCard}>
+          <h3>{id}</h3>
+          <h4>{title}</h4>
+          <p>{text}</p>
+          <button>READ MORE</button>
+        </div>
+      </div>
     </>
   );
 };
