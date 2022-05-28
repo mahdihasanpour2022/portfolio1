@@ -9,10 +9,10 @@ import Styles from "../assets/style/components_style/Header.module.scss";
 const Header = () => {
 
   const dispatch = useDispatch();
-  
+
   useEffect(() => {
     dispatch(fetchData())
-  }, [])
+  }, [dispatch])
 
   return (
     <>

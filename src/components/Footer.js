@@ -9,10 +9,8 @@ import { FiPhone } from "react-icons/fi";
 
 const Footer = () => {
 
-  // const dispatch = useDispatch();
-  const data = useSelector(state => state.commentState);
+  const {comments} = useSelector(state => state.commentState);
 
-// console.log(data)
   return (
     <>
       <div className={`${Styles.container} container-fluid`}>
