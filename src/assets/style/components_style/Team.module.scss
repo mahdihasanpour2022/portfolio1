@@ -75,3 +75,13 @@
     }
   }
 }
+.scrollspyIcon{
+  display: block;
+  width: 100%;
+  text-align: right;
+  svg{
+    color: $gold;
+    font-size: 2rem;
+    margin: 1rem;
+  }
+}

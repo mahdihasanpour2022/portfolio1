@@ -7,7 +7,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: $black;
+  // background-color: $black;
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
   height: 100vh;
   z-index: 15;
   transform: translate(-200%, 0);
