@@ -1,7 +1,7 @@
 import {portfolio_LC} from "../../local_storage/localStorage";
 
 const initialPortfolioState = {
-  portfolio: []
+  portfolio: localStorage.getItem("portfolio") ?JSON.parse( localStorage.getItem("portfolio")): [],
 }
 const portfolioReducer = (state = initialPortfolioState, action) => {
   switch (action.type) {

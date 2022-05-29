@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import {Link} from "react-router-dom";
+// component
+import Footer from "../components/Footer"; 
 // action creator 
 import { getPortfolio } from "../redux/portfolio/portfolioActionCreator";
 // data 
@@ -31,6 +33,7 @@ const Portfolio = () => {
           </div>
         </div>
       }
+      <Footer />
     </>
   );
 };
