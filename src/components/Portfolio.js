@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import {Link} from "react-router-dom";
 // component
 import Footer from "../components/Footer"; 
+import Navbar from "../components/Navbar";
 // action creator 
 import { getPortfolio } from "../redux/portfolio/portfolioActionCreator";
 // data 
@@ -23,6 +24,8 @@ const Portfolio = () => {
 
   return (
     <>
+    {/* navbartop  */}
+    <Navbar />
       {!!portfolio.length &&
         <div className="container mb-5">
           <div className="row">
