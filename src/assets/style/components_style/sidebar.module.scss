@@ -1,0 +1,66 @@
+@import "../common_styles/font";
+@import "../common_styles/variables";
+@import "../common_styles//mixins";
+
+.sideMenu {
+  width: 30%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $white;
+  height: 100vh;
+  z-index: 15;
+  transform: translate(-100%, 0);
+  transition: all 0.4s ease;
+
+  .closeMenu {
+    font-size: 1.3rem;
+    opacity: 0.5;
+    display: block;
+    margin: 0.7rem;
+    margin-left: auto;
+    cursor: pointer;
+  }
+}
+
+.sideMenuOpen {
+  transform: translate(0, 0);
+}
+
+
+// media query ------------------
+@media (max-width:576px) {
+  .sideMenu {
+    width: 50%;
+  }
+}
+
+@media (min-width:576px) {
+  .sideMenu {
+    width: 40%;
+  }
+}
+
+@media (min-width:768px) {
+  .sideMenu {
+    width: 30%;
+  }
+}
+
+@media (min-width:992px) {
+  .sideMenu {
+    width: 25%;
+  }
+}
+
+@media (min-width:1200px) {
+  .sideMenu {
+    width: 20%;
+  }
+}
+
+@media (min-width:1400px) {
+  .sideMenu {
+    width: 17%;
+  }
+}
