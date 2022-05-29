@@ -1,3 +1,108 @@
 @import "../common_styles/font";
 @import "../common_styles/variables";
 @import "../common_styles//mixins";
+
+
+.contactContainer {
+  background-color: $black;
+  width: 100%;
+  height: fit-content;
+  padding:0 3rem 3rem;
+  position: relative;
+
+  .imageBox {
+    width: calc(100%-6rem);
+    height: 40vh;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      object-fit: cover;
+      opacity: 0.4;
+    }
+  }
+
+
+  .content {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h3 {
+      color: $white;
+      font-size: 1.6rem;
+      font-family: $Poppins;
+      @include ziro_space;
+    }
+
+    .breaadcrumb {
+      text-align: center;
+
+      nav {
+        display: inline-block;
+
+        li {
+
+          // color: $white;
+          a {
+            color: $black;
+            text-decoration: none;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+
+.formLocationContainer{
+  background-color: $black;
+  display: flex;
+  .rightForm {
+    background-color: $black;
+    width: 50%;
+    height: fit-content;
+    padding: 1.5rem;
+    
+    label {
+      color: $light_gold;
+      opacity: 0.6;
+      font-weight: 400;
+      margin: 0.5rem 0 0.2rem;
+    }
+    .sendForm{
+      @include buttons($white,$gold){
+        padding: 0.3rem 1.5rem;
+        border-radius: 5px;
+        margin: 1rem 0;
+      }
+      transition: all 0.4s ease;
+      &:hover{
+        @include buttons($black,$gold);
+      }
+    }
+  }
+  .leftMap {
+    width: 50%;
+    height: 100%;
+    padding: 1.5rem;
+    p{
+      color: $white;
+    }
+  }
+}
+@media (max-width :576px){
+.formLocationContainer{
+  display: grid;
+  .rightForm{
+   width: 100%;
+  }
+  .leftMap{
+    width: 100%;
+  }
+}
+}
