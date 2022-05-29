@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import CreativeSolution from "../components/CreativeSolution";
 import Services from "../components/Services";
 import Comments from "../components/Comments.js";
-import OurRender from "../components/OurRender.js";
+import Portfolio from "../components/Portfolio.js";
 import Team from "../components/Team.js";
 import Footer from "../components/Footer.js";
 
@@ -15,7 +15,7 @@ const Home = () => {
       <CreativeSolution />
       <Services />
       <Comments />
-      <OurRender />
+      <Portfolio />
       <Team />
       <Footer />
     </>
