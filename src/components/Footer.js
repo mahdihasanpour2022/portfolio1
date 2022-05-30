@@ -23,7 +23,7 @@ const Footer = () => {
       {/* conditional rendering for heder container  */}
       {!!comments.length &&
         <div className={`${Styles.container} container-fluid`}>
-          <div className="row py-4">
+          <div className="row g-3 py-4">
             {/* start ContactUs */}
             <div className="col-md-4">
               <div className={Styles.ContactUs}>

@@ -16,3 +16,23 @@
   align-items: $ai;
   @content;
 }
+
+@mixin Hstyle($color,$fs) {
+  color: $color;
+  font-size: $fs;
+  font-family: $Poppins;
+  @content;
+}
+
+@mixin AtagStyle($color){
+  color: $color;
+  text-decoration: none;
+}
+
+@mixin absolute($top,$left){
+  content: "";
+  position: absolute;
+  top: $top;
+  left: $left;
+  transform: translate(-50%, -50%);
+}
