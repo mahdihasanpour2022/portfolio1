@@ -23,11 +23,13 @@ const Portfolio = () => {
   return (
     <>
       {!!portfolio.length &&
-        <div className="container mb-5">
+        <div className="container-fluid">
           <div className="row">
+            {/* start renderGridBox */}
             <div className={Styles.renderGridBox}>
               {portfolio.map(item => <img src={item} key={v4()} alt={`${v4()}`} />)}
             </div>
+            {/* end renderGridBox */}
           </div>
         </div>
       }

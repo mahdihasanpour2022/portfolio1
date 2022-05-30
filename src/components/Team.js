@@ -27,10 +27,12 @@ const Team = () => {
 
   return (
     <>
+    {/*start TeamContainer */}
       <div className={`${Styles.TeamContainer} container-fluid`}>
         <div className="row">
-          <div className='col-12'>
+          <div>
             <p className={Styles.title} >Creative Team</p>
+            {/*start teams */}
             <div className={Styles.teams}>
               {comments_list.map(item =>
                 <div key={item.author} className={Styles.person}>
@@ -39,6 +41,9 @@ const Team = () => {
                   <p>{item.title}</p>
                 </div>)}
             </div>
+             {/*end teams */}
+
+             {/* scrollspyIcon  icon*/}
             <div className={Styles.scrollspyIcon}>
               <HiOutlineArrowCircleUp
                 onClick={() => goTop()}
@@ -48,6 +53,7 @@ const Team = () => {
           </div>
         </div>
       </div>
+    {/*end TeamContainer */}
     </>
   );
 };
