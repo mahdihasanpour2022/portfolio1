@@ -18,19 +18,22 @@
       color: $white;
       text-decoration: none;
       font-size: 0.95rem;
-      font-family: $Poppins;
+      // font-family: $Poppins;
       letter-spacing: 0.1rem;
+      &:hover {
+        border-bottom: 1px solid $white;
+      }
     }
 
     .active {
       color: $light_gold;
       font-family: $Poppins;
       // font-weight: 600;
+      &:hover {
+        border-bottom: 1px solid $light_gold;
+      }
     }
 
-    &:hover {
-      border-bottom: 1px solid $light_gold;
-    }
   }
 }
 
