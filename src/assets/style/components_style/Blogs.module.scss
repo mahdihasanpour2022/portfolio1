@@ -8,7 +8,7 @@
   background-color: $black;
   width: 100%;
   height: fit-content;
-  padding:0 3rem 3rem;
+  padding: 0 2rem 2rem;
   position: relative;
 
   .imageBox {
@@ -47,6 +47,7 @@
 
         li {
           color: darkgray;
+
           a {
             color: $black;
             text-decoration: none;
@@ -57,28 +58,96 @@
     }
   }
 }
-.blog{
-  img{
 
+.blog {
+  background-color: $black;
+  padding: 2rem;
+  text-align: center;
+
+  img {
+    width: 75%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    // box-shadow: 5px 5px 10px rgba(250, 250, 250, 0.2);
   }
-  .blogText{
-    .blogiddate{
 
+  .blogText {
+    width: 75%;
+    margin: 0 auto;
+    color: $white;
+    // height: fit-content;
+    @include flex(flex-start, stretch);
+
+    .blogiddate {
+      @include flex(space-between, center) {
+        flex-direction: column;
+
+      }
+
+      height:100%;
+
+      h2 {
+        font-size: 3.5rem;
+        border-radius: 5px;
+      }
+
+      p {
+        color: $gold;
+        font-size: 14px;
+        @include ziro_space;
+      }
     }
-.blogDetail{
-  p{
 
-  }
-  h3{
+    .blogDetail {
+      text-align: left;
+      margin-left: 1.5rem;
+      height: 100%;
 
-  }
-  .blogDescription{
+      .tags {
+        color: $white;
+        opacity: 0.5;
+        font-size: 11px;
+        @include ziro_space;
+      }
 
-  }
-  button{
-    
+      h3 {}
+
+      .blogDescription {
+        opacity: 0.5;
+      }
+
+      button {
+        @include buttons($white , $gold) {
+          padding: 0.2rem 0.6rem;
+          border: none;
+          border-radius: 5px;
+          transition: all 0.3s ease;
+        }
+
+        &:hover {
+          @include buttons($black , $white);
+        }
+      }
+    }
+
+
   }
 }
 
+@media (max-width:576px) {
+  .blogText {
+    @include flex(center, baseline) {
+      flex-direction: column;
+    }
+
+    ;
+    .blogiddate{
+      display: flex;
+      flex-direction: column;
+      align-items: baseline !important;
+    }
+    .blogDetail{
+      margin:1.5rem 0 !important;
+    }
   }
 }

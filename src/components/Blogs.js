@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from "react-redux";
-
+// helper function 
+import {shorterText18} from "../helper_function/helper_function";
 // scss 
 import Styles from "../assets/style/components_style/Blogs.module.scss";
 // component
@@ -14,6 +15,8 @@ const Blogs = () => {
 
   const { portfolio } = useSelector(state => state.portfolioState)
   const { blogs } = useSelector(state => state.commentSBlogsState)
+
+
 
   return (
     <>
@@ -35,6 +38,7 @@ const Blogs = () => {
               </div>
             </div>
           </div>
+
           {!!blogs.length &&
           
             blogs.map(item =>
@@ -43,12 +47,13 @@ const Blogs = () => {
                 <img src={item.image} alt={item.id} />
                 <div className={Styles.blogText} >
                   <div className={Styles.blogiddate}>
-                    <h4>{item.id}</h4>
+                    <h2>{item.id}</h2>
+                    <p>{item.date}</p>
                   </div>
                   <div className={Styles.blogDetail}>
-                    <p>{item.tag.map(tag => <span key={tag}>{tag}</span>)}</p>
+                    <p className={Styles.tags} >{item.tag.map(tag => <span key={tag}>{tag} ,</span>)}</p>
                     <h3>{item.title}</h3>
-                    <p className={Styles.blogDescription}>{item.text}</p>
+                    <p className={Styles.blogDescription}>{shorterText18(item.text)}</p>
                     <button>READ MORE</button>
                   </div>
                 </div>
