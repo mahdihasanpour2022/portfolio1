@@ -17,7 +17,10 @@ const Contact = () => {
   const { portfolio } = useSelector(state => state.portfolioState)
 
 
-
+  const submitHandler = e => {
+    e.preventDefault();
+    console.log("form submit")
+  }
   return (
     <>
       <Navbar />
@@ -45,14 +48,14 @@ const Contact = () => {
               <p>504 White St . Dawsonville, GA 30534 , New York</p>
             </div>
             <div className={Styles.rightForm}>
-              <form>
+              <form onSubmit={e => submitHandler(e)} >
                 <label htmlFor="">name:</label>
                 <input className='form-control' type="text" />
                 <label htmlFor="">email:</label>
                 <input className='form-control' type="email" />
                 <label htmlFor="">message:</label>
                 <textarea className='form-control' rows="10"></textarea>
-                <button className={Styles.sendForm} >Send</button>
+                <button type="submit" className={Styles.sendForm} >Send</button>
               </form>
             </div>
           </div>

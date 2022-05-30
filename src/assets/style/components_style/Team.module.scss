@@ -7,10 +7,15 @@
   background-color: $black;
   text-align: center;
 
-  p {
+  .title {
     color: $white;
     font-size: 2.5rem;
     margin: 1rem auto;
+    transition: font-size 0.3s ease;
+
+    // @media (max-width:576px){
+    //   font-size: 1.5rem;
+    // }
   }
 
   .teams {
@@ -59,29 +64,54 @@
         border: 3px solid $light_gold;
         transition: all 0.4s ease;
       }
-      &:hover{
-        &::before{
-          
+
+      &:hover {
+        &::before {
+
           border: 3px solid $gold;
-          transform: rotate(0) scale(1.1);;
+          transform: rotate(0) scale(1.1);
+          ;
         }
-        h4{
+
+        h4 {
           color: $gold;
         }
-        p{
+
+        p {
           color: $white;
         }
       }
+
     }
   }
 }
-.scrollspyIcon{
+
+.scrollspyIcon {
   display: block;
   width: 100%;
   text-align: right;
-  svg{
+
+  svg {
     color: $gold;
     font-size: 2rem;
     margin: 1rem;
+  }
+}
+
+@media (max-width:576px) {
+  .TeamContainer {
+    .title {
+      font-size: 1.5rem;
+    }
+
+    .teams {
+      .person {
+        margin: 3rem;
+
+        img {
+          width: 150px;
+        }
+      }
+    }
   }
 }

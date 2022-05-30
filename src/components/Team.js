@@ -30,7 +30,7 @@ const Team = () => {
       <div className={`${Styles.TeamContainer} container-fluid`}>
         <div className="row">
           <div className='col-12'>
-            <p>Creative Team</p>
+            <p className={Styles.title} >Creative Team</p>
             <div className={Styles.teams}>
               {comments_list.map(item =>
                 <div key={item.author} className={Styles.person}>

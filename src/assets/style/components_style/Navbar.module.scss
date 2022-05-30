@@ -3,30 +3,45 @@
 @import "../common_styles/mixins";
 
 
-.navbarMenu{
+.navbarMenu {
   width: 100%;
   height: 10vh;
   background-color: $black;
   margin: 0;
-  @include flex(flex-start,center);
-  li{
+  @include flex(flex-start, center);
+
+  li {
     list-style-type: none;
     margin-right: 1rem;
-    .navlink{
+
+    .navlink {
       color: $light_gold;
       text-decoration: none;
       font-size: 0.95rem;
-      // font-weight: 600;
       font-family: $Poppins;
       letter-spacing: 0.1rem;
     }
-    .active{
+
+    .active {
       color: $white;
       font-family: $Poppins;
       // font-weight: 600;
     }
+
     &:hover {
       border-bottom: 1px solid $light_gold;
+    }
+  }
+}
+
+@media (max-width:365px) {
+  .navbarMenu {
+    li {
+      margin-right: 0.5rem;
+
+      .navlink {
+        font-size: 0.64rem;
+      }
     }
   }
 }
