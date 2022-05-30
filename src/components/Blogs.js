@@ -13,6 +13,7 @@ import { Breadcrumb } from "react-bootstrap";
 const Blogs = () => {
 
   const { portfolio } = useSelector(state => state.portfolioState)
+  const { blogs } = useSelector(state => state.commentSBlogsState)
 
   return (
     <>
@@ -34,22 +35,26 @@ const Blogs = () => {
               </div>
             </div>
           </div>
+          {!!blogs.length &&
+          
+            blogs.map(item =>
 
-          {/* <div className={Styles.blog}>
-            <img src={portfolio.map(item => item)} alt="" />
-            <div className={Styles.blogText} >
-              <div className={Styles.blogiddate}>
-                <h4>{portfolio.map((item, index) => index)}</h4>
+              <div className={Styles.blog} key={item.id}>
+                <img src={item.image} alt={item.id} />
+                <div className={Styles.blogText} >
+                  <div className={Styles.blogiddate}>
+                    <h4>{item.id}</h4>
+                  </div>
+                  <div className={Styles.blogDetail}>
+                    <p>{item.tag.map(tag => <span key={tag}>{tag}</span>)}</p>
+                    <h3>{item.title}</h3>
+                    <p className={Styles.blogDescription}>{item.text}</p>
+                    <button>READ MORE</button>
+                  </div>
+                </div>
               </div>
-              <div className={Styles.blogDetail}>
-                <p></p>
-                <h3></h3>
-                <p className={Styles.blogDescription}></p>
-                <button>READ MORE</button>
-              </div>
-            </div>
-          </div> */}
-
+            )
+          }
         </div>
       </div>
 
