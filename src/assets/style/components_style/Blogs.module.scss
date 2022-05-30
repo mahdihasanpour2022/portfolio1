@@ -134,6 +134,23 @@
   }
 }
 
+.loadmoreBTN{
+  background-color: $black;
+  text-align: center;
+  padding: 1.5rem 0;
+  button{
+    @include buttons($black,$white){
+      border: none;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+    }
+    transition: all 0.3s ease;
+    &:hover{
+      @include buttons($white,$gold);
+    }
+  }
+}
+// media query 
 @media (max-width:576px) {
   .blogText {
     @include flex(center, baseline) {

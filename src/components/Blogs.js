@@ -1,7 +1,7 @@
-import React from 'react';
+import React ,{useState} from 'react';
 import { useSelector } from "react-redux";
 // helper function 
-import {shorterText18} from "../helper_function/helper_function";
+import { shorterText18 } from "../helper_function/helper_function";
 // scss 
 import Styles from "../assets/style/components_style/Blogs.module.scss";
 // component
@@ -13,10 +13,16 @@ import { Breadcrumb } from "react-bootstrap";
 
 const Blogs = () => {
 
+  const [someBlogs, setSomeBlogs] = useState(2)
+
   const { portfolio } = useSelector(state => state.portfolioState)
   const { blogs } = useSelector(state => state.commentSBlogsState)
 
-
+  const loadmore = () => {
+    if (!!blogs.length) {
+      setSomeBlogs(prevState => prevState + 2)
+    }
+  }
 
   return (
     <>
@@ -40,8 +46,8 @@ const Blogs = () => {
           </div>
 
           {!!blogs.length &&
-          
-            blogs.map(item =>
+
+            blogs.slice(0,someBlogs).map(item =>
 
               <div className={Styles.blog} key={item.id}>
                 <img src={item.image} alt={item.id} />
@@ -62,7 +68,9 @@ const Blogs = () => {
           }
         </div>
       </div>
-
+      <div className={Styles.loadmoreBTN} >
+        <button onClick={() => loadmore()} >LOAD MORE BLOGS</button>
+      </div>
       <Footer />
     </>
   );
