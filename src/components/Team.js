@@ -14,7 +14,7 @@ const Team = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 3500) {
+      if (window.scrollY > 2500) {
         setDownPage(true)
       }
     })
