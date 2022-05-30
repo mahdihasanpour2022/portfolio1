@@ -20,10 +20,11 @@ const Footer = () => {
 
   return (
     <>
+      {/* conditional rendering for heder container  */}
       {!!comments.length &&
         <div className={`${Styles.container} container-fluid`}>
           <div className="row py-4">
-
+            {/* start ContactUs */}
             <div className="col-md-4">
               <div className={Styles.ContactUs}>
                 <h4>Contact Us</h4>
@@ -52,7 +53,9 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
+            {/* end ContactUs */}
 
+            {/* start RecentNews  */}
             <div className="col-md-4">
               <div className={Styles.RecentNews}>
                 <h4>Recent News</h4>
@@ -70,7 +73,9 @@ const Footer = () => {
                 )}
               </div>
             </div>
+            {/* end RecentNews  */}
 
+            {/* start SocialMedia */}
             <div className="col-md-4">
               <div className={Styles.SocialMedia}>
                 <h4>Archo</h4>
@@ -85,6 +90,8 @@ const Footer = () => {
                 <p>© 2022, ARCH TEMPLATE. MADE WITH PASSION BYTHEMESCAMP.</p>
               </div>
             </div>
+            {/* start SocialMedia */}
+
           </div>
         </div>
       }

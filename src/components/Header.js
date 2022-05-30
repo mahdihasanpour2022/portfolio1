@@ -15,7 +15,7 @@ import { CgMenuLeft } from "react-icons/cg";
 const Header = () => {
 
   const dispatch = useDispatch();
-  const {sidemenu} = useSelector(state => state.menuState)
+  const { sidemenu } = useSelector(state => state.menuState)
 
   useEffect(() => {
     dispatch(fetchData())
@@ -26,6 +26,7 @@ const Header = () => {
     <>
       <div className="container-fluid">
         <div className="row">
+          {/* start div that absoluted  */}
           <div className={Styles.headerContainer}>
             <div className={Styles.headerContent}>
               <h1>Elegant & Unique Design</h1>
@@ -33,12 +34,18 @@ const Header = () => {
               <button><Link to="/blogs">Read More</Link></button>
             </div>
           </div>
+          {/* end div that absoluted  */}
+
+
+          {/*start menu icon and menubar component  */}
           <div>
             <SideBar />
+            {/* conditional rendering for menu hamburger icon */}
             {!sidemenu &&
               <CgMenuLeft onClick={() => dispatch(openSideMenu_AC(true))} className={Styles.menuIcon} />
             }
           </div>
+          {/*end menu icon and menubar component  */}
         </div>
       </div>
     </>

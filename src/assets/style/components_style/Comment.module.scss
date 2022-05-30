@@ -1,11 +1,7 @@
 @import "../common_styles/variables";
-@import "../common_styles/font";
 @import "../common_styles/mixins";
 
-
-
 .comment {
-
   min-height: 250px;
   margin: 0.5rem;
   border: 1px solid rgb(67, 67, 67);
@@ -36,7 +32,6 @@
     }
 
     .description {
-
       h6 {
         color: $white;
         margin: 0;

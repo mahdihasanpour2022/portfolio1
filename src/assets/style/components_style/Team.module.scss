@@ -12,15 +12,9 @@
     font-size: 2.5rem;
     margin: 1rem auto;
     transition: font-size 0.3s ease;
-
-    // @media (max-width:576px){
-    //   font-size: 1.5rem;
-    // }
   }
 
   .teams {
-
-    // border: 1px solid red;
     @include flex(center, flex-start) {
       flex-flow: row wrap;
     }
@@ -86,6 +80,7 @@
   }
 }
 
+// scroolspy 
 .scrollspyIcon {
   display: block;
   width: 100%;
@@ -98,6 +93,7 @@
   }
 }
 
+// media query 
 @media (max-width:576px) {
   .TeamContainer {
     .title {

@@ -1,5 +1,4 @@
 @import "../common_styles/variables";
-@import "../common_styles/font";
 @import "../common_styles/mixins";
 
 
@@ -22,12 +21,7 @@
           opacity: 70%;
           margin-right: 1rem;
           font-size: 1.5rem;
-          // color: $black;
-          // background-color: $white;
-          // padding: 0.7rem;
           display: inline-flex;
-          // border-radius: 50%;
-          // border: none;
           width: 1.5rem;
           height: 1.5rem;
         }
@@ -117,6 +111,7 @@
   }
 }
 
+// media query 
 @media (max-widht: 576px) {
   .ContactUs {
     @include flex(center, center) {

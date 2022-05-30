@@ -26,6 +26,7 @@ const Contact = () => {
       <Navbar />
       <div className="container-fluid">
         <div className="row">
+          {/* start imageBox top of this components  */}
           <div className={Styles.contactContainer}>
             <div className={Styles.imageBox}>
               <img src={portfolio[0]} alt={portfolio[0]} />
@@ -41,12 +42,17 @@ const Contact = () => {
             </div>
           </div>
 
+          {/* start form and Location div in down of this components  */}
           <div className={Styles.formLocationContainer} >
+
+            {/* start map in left side of this component */}
             <div className={Styles.leftMap}>
               <img src={tehran} alt="tehran" />
               <h6>Officeal Address</h6>
               <p>504 White St . Dawsonville, GA 30534 , New York</p>
             </div>
+
+            {/* start contact form in right side of this component */}
             <div className={Styles.rightForm}>
               <form onSubmit={e => submitHandler(e)} >
                 <label htmlFor="">name:</label>
@@ -58,7 +64,9 @@ const Contact = () => {
                 <button type="submit" className={Styles.sendForm} >Send</button>
               </form>
             </div>
+
           </div>
+
         </div>
       </div>
       <Footer />

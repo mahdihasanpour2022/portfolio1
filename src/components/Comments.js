@@ -11,6 +11,7 @@ import Styles from "../assets/style/components_style/Comments.module.scss";
 
 const Comments = () => {
 
+  // responsive for alice package 
   const responsive = {
     0: { items: 1 },
     568: { items: 1 },
@@ -24,8 +25,11 @@ const Comments = () => {
     <>
       <div className={`${Styles.commentsContainer} container-fluid p-0`}>
         <div className="row m-0">
+
+          {/* start comments  */}
           <div className={Styles.comments}>
 
+            {/* start alice component  */}
             <AliceCarousel
               autoPlay
               autoPlayInterval={2000}
@@ -41,7 +45,10 @@ const Comments = () => {
               items={
                 comments_list.map(item => <Comment key={item.id} data={item} />)
               } />
+
           </div>
+          {/* end comments  */}
+
         </div>
       </div>
     </>

@@ -1,6 +1,4 @@
 @import "../common_styles/variables";
-@import "../common_styles/font";
-@import "../common_styles/mixins";
 
 
 .commentsContainer {
@@ -13,6 +11,7 @@
     padding: 2rem 0;
   }
 }
+// media query 
 @media (max-width:576px){
   .commentsContainer {
     display: none;

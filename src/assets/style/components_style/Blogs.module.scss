@@ -3,7 +3,6 @@
 @import "../common_styles/mixins";
 
 
-
 .blogsContainer {
   background-color: $black;
   width: 100%;
@@ -69,18 +68,17 @@
     width: 75%;
     object-fit: cover;
     margin-bottom: 1.5rem;
-    // box-shadow: 5px 5px 10px rgba(250, 250, 250, 0.2);
   }
 
   .blogText {
     width: 75%;
     margin: 0 auto;
     color: $white;
-    // height: fit-content;
     @include flex(flex-start, stretch);
 
     .blogiddate {
-      height:100%;
+      height: 100%;
+
       @include flex(space-between, center) {
         flex-direction: column;
       }
@@ -132,22 +130,26 @@
   }
 }
 
-.loadmoreBTN{
+.loadmoreBTN {
   background-color: $black;
   text-align: center;
   padding: 1.5rem 0;
-  button{
-    @include buttons($black,$white){
+
+  button {
+    @include buttons($black, $white) {
       border: none;
       border-radius: 5px;
       padding: 0.5rem 1rem;
     }
+
     transition: all 0.3s ease;
-    &:hover{
-      @include buttons($white,$gold);
+
+    &:hover {
+      @include buttons($white, $gold);
     }
   }
 }
+
 // media query 
 @media (max-width:576px) {
   .blogText {
@@ -156,13 +158,15 @@
     }
 
     ;
-    .blogiddate{
+
+    .blogiddate {
       display: flex;
       flex-direction: column;
       align-items: baseline !important;
     }
-    .blogDetail{
-      margin:1.5rem 0 !important;
+
+    .blogDetail {
+      margin: 1.5rem 0 !important;
     }
   }
 }

@@ -1,4 +1,4 @@
-import React ,{useState} from 'react';
+import React, { useState } from 'react';
 import { useSelector } from "react-redux";
 // helper function 
 import { shorterText18 } from "../helper_function/helper_function";
@@ -30,6 +30,7 @@ const Blogs = () => {
       <div className="container-fluid">
         <div className="row">
 
+          {/* image in top of this components */}
           <div className={Styles.blogsContainer}>
             <div className={Styles.imageBox}>
               <img src={portfolio[3]} alt={portfolio[2]} />
@@ -45,9 +46,10 @@ const Blogs = () => {
             </div>
           </div>
 
+          {/* conditional endering for blogs */}
           {!!blogs.length &&
 
-            blogs.slice(0,someBlogs).map(item =>
+            blogs.slice(0, someBlogs).map(item =>
 
               <div className={Styles.blog} key={item.id}>
                 <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500" src={item.image} alt={item.id} />
@@ -66,11 +68,15 @@ const Blogs = () => {
               </div>
             )
           }
+
         </div>
       </div>
+
+      {/* loadmore button  */}
       <div className={Styles.loadmoreBTN} >
         <button onClick={() => loadmore()} >LOAD MORE BLOGS</button>
       </div>
+
       <Footer />
     </>
   );

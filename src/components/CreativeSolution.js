@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 // scss 
 import Styles from "../assets/style/components_style/CreativeSolution.module.scss";
 // react-countup 
@@ -12,6 +12,8 @@ const CreativeSolution = () => {
     <>
       <div className={`${Styles.creativeContainer} container-fluid p-0`}>
         <div className="row m-0 g-4 my-4">
+
+          {/* start left side component  */}
           <div className="col-md-6">
             <div className={Styles.left}>
               <h2>Creative Solutions by Professional Designers</h2>
@@ -19,6 +21,8 @@ const CreativeSolution = () => {
               <button><Link to="/blogs" >Read More</Link></button>
             </div>
           </div>
+
+          {/* start right side component  */}
           <div className="col-md-6">
             <div className={Styles.right}>
               <div className={Styles.rightContent}>
@@ -30,6 +34,7 @@ const CreativeSolution = () => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </>
