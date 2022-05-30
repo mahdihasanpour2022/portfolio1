@@ -7,10 +7,15 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 // Breadcrumb
 import { Breadcrumb } from "react-bootstrap";
+// images 
+import tehran from "../assets/images/tehranLocation.jpg";
+// google-maps-react 
+// import GoogleMapReact from 'google-map-react';
 
 const Contact = () => {
 
   const { portfolio } = useSelector(state => state.portfolioState)
+
 
 
   return (
@@ -35,7 +40,9 @@ const Contact = () => {
 
           <div className={Styles.formLocationContainer} >
             <div className={Styles.leftMap}>
-              
+              <img src={tehran} alt="tehran" />
+              <h6>Officeal Address</h6>
+              <p>504 White St . Dawsonville, GA 30534 , New York</p>
             </div>
             <div className={Styles.rightForm}>
               <form>
