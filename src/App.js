@@ -4,11 +4,14 @@ import {Provider} from "react-redux";
 import Store from "./redux/Store";
 // components 
 import Home from "./components/Home";
-import Portfolio from "./components/Portfolio";
+import Portfolios from "./components/Portfolios";
 import Blogs from "./components/Blogs";
 import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
-
+// aos 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 function App() {
 
@@ -17,7 +20,7 @@ function App() {
     <Provider store={Store}>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/portfolios" element={<Portfolios />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/notfound" element={<NotFound />} />

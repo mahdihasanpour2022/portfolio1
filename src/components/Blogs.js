@@ -50,7 +50,7 @@ const Blogs = () => {
             blogs.slice(0,someBlogs).map(item =>
 
               <div className={Styles.blog} key={item.id}>
-                <img src={item.image} alt={item.id} />
+                <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500" src={item.image} alt={item.id} />
                 <div className={Styles.blogText} >
                   <div className={Styles.blogiddate}>
                     <h2>{item.id}</h2>

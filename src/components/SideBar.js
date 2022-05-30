@@ -29,7 +29,7 @@ const SideBar = () => {
             <NavLink to="/" className={navData => navData.isActive ? `${Styles.navlink} ${Styles.active}` : Styles.navlink}>Home</NavLink>
           </li>
           <li>
-            <NavLink to="/portfolio" className={navData => navData.isActive ? `${Styles.navlink} ${Styles.active}` : Styles.navlink}>Portfolio</NavLink>
+            <NavLink to="/portfolios" className={navData => navData.isActive ? `${Styles.navlink} ${Styles.active}` : Styles.navlink}>Portfolio</NavLink>
           </li>
           <li>
             <NavLink to="/blogs" className={navData => navData.isActive ? `${Styles.navlink} ${Styles.active}` : Styles.navlink}>Blogs</NavLink>

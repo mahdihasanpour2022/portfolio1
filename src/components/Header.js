@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from "react-redux";
+import {Link} from "react-router-dom";
 // menu action creator  
 import {openSideMenu_AC} from "../redux/menus/sidemenu/sideMenuActionCreator";
 // components 
@@ -10,7 +11,6 @@ import fetchData from '../redux/commentBlogs/commentsBlogsActionCreator.js';
 import Styles from "../assets/style/components_style/Header.module.scss";
 // icon 
 import { CgMenuLeft } from "react-icons/cg";
-
 
 const Header = () => {
 
@@ -30,7 +30,7 @@ const Header = () => {
             <div className={Styles.headerContent}>
               <h1>Elegant & Unique Design</h1>
               <p>Right design and right ideas matter a lot of in interior design business.a style that makes a statement.</p>
-              <button>Read More</button>
+              <button><Link to="/blogs">Read More</Link></button>
             </div>
           </div>
           <div>
