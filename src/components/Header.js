@@ -21,7 +21,6 @@ const Header = () => {
     dispatch(fetchData())
   }, [dispatch])
 
-  console.log(sidemenu)
   return (
     <>
       <div className="container-fluid">

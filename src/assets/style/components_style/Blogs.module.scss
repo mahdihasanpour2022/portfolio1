@@ -11,7 +11,7 @@
   position: relative;
 
   .imageBox {
-    width: calc(100%-6rem);
+    width: 100%;
     height: 40vh;
 
     img {
@@ -25,10 +25,10 @@
 
 
   .blogcontent {
-    @include absolute(50%,50%);
+    @include absolute(50%, 50%);
 
     h3 {
-      @include Hstyle ($white,1.6rem);
+      @include Hstyle ($white, 1.6rem);
       @include ziro_space;
     }
 
@@ -76,7 +76,7 @@
       }
 
       h2 {
-        @include Hstyle($gold,3.5rem);
+        @include Hstyle($gold, 3.5rem);
       }
 
       p {
@@ -133,10 +133,11 @@
       padding: 0.5rem 1rem;
     }
 
+    margin-bottom: 0.5rem;
     transition: all 0.3s ease;
 
     &:hover {
-      @include buttons($white, $gold);
+      @include buttons( $gold,$black);
     }
   }
 }
