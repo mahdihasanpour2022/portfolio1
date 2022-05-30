@@ -16,7 +16,7 @@ import { BsYoutube } from "react-icons/bs";
 
 const Footer = () => {
 
-  const { comments } = useSelector(state => state.commentState);
+  const { comments } = useSelector(state => state.commentSBlogsState);
 
   return (
     <>

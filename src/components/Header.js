@@ -5,7 +5,7 @@ import {openSideMenu_AC} from "../redux/menus/sidemenu/sideMenuActionCreator";
 // components 
 import SideBar from "../components/SideBar";
 // action creator 
-import fetchData from '../redux/comment/commentActionCreator';
+import fetchData from '../redux/commentBlogs/commentsBlogsActionCreator.js';
 // scss 
 import Styles from "../assets/style/components_style/Header.module.scss";
 // icon 
