@@ -15,6 +15,7 @@
   color: $white;
   font-size: 0.8rem;
   @include ziro_space;
+  cursor: pointer;
   span{
     font-size: 1.3rem;
   }
