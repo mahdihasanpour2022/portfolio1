@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector } from "react-redux";
+import {Link} from "react-router-dom";
 // helper function 
 import { shorterText18 } from "../helper_function/helper_function";
 // scss 
@@ -62,8 +63,8 @@ const Blogs = () => {
                     <p className={Styles.tags} >{item.tag.map(tag => <span key={tag}>{tag} ,</span>)}</p>
                     <h3>{item.title}</h3>
                     <p className={Styles.blogDescription}>{shorterText18(item.text)}</p>
-                    <button>READ MORE</button>
-                  </div>
+                    <button ><Link to="/blogDetails">READ MORE</Link></button>
+                  </div> 
                 </div>
               </div>
             )
