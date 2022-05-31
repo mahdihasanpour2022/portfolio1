@@ -89,7 +89,8 @@
   svg {
     color: $gold;
     font-size: 2rem;
-    margin: 1rem;
+    display:inline-block !important;
+    margin:0 1rem 3rem ;
   }
 }
 
