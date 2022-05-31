@@ -63,7 +63,7 @@ const Blogs = () => {
                     <p className={Styles.tags} >{item.tag.map(tag => <span key={tag}>{tag} ,</span>)}</p>
                     <h3>{item.title}</h3>
                     <p className={Styles.blogDescription}>{shorterText18(item.text)}</p>
-                    <button ><Link to="/blogDetails">READ MORE</Link></button>
+                    <button ><Link to={`/blogDetails/${item.id}`}>READ MORE</Link></button>
                   </div> 
                 </div>
               </div>

@@ -1,0 +1,68 @@
+@import "../common_styles/variables";
+@import "../common_styles/font";
+@import "../common_styles/mixins";
+
+
+
+.blogDetails {
+  background-color: $black;
+  width: 100%;
+  height: fit-content;
+  padding: 2rem;
+  position: relative;
+  margin: 0;
+  p{
+  color: $white;
+  font-size: 0.8rem;
+  @include ziro_space;
+  span{
+    font-size: 1.3rem;
+  }
+}
+  img {
+    width: 100%;
+    height: 40vh;
+    border: none;
+    border-radius: 5px;
+    object-fit: cover;
+    opacity: 0.4;
+    margin-bottom: 1rem;
+  }
+
+  .blogDetailsText {
+    .blogDetailsiddate {
+      @include flex(flex-start, flex-end);
+      color: $white;
+
+      h2 {
+        font-size: 2rem;
+        @include ziro_space;
+        margin-right: 2.3rem;
+      }
+
+      p {
+        @include ziro_space;
+        font-size: 0.75rem;
+        color: $gold;
+      }
+    }
+
+    .blogDetail {
+      color: $white;
+
+      .blogDetailsTags {
+        font-size: 0.75rem;
+      }
+
+      h3 {}
+
+      p {
+        opacity: 0.5;
+      }
+
+    }
+
+  }
+
+
+}
